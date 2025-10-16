@@ -1,10 +1,21 @@
 {
-  "name": "dota-discord-bot-nodejs",
+  "name": "dota-bot-discord-nodejs",
   "private": true,
   "version": "1.0.0",
   "workspaces": [
-    "packages/common",
-    "packages/api",
-    "packages/bot"
-  ]
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev:api": "npm --workspace @dota/api run dev",
+    "dev:bot": "npm --workspace @dota/bot run dev"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.7.1",
+    "concurrently": "^8.0.0"
+  },
+  "dependencies": {
+    "graphql-request": "^7.3.0",
+    "luxon": "^3.7.2"
+  }
 }
