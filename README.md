@@ -22,8 +22,7 @@ The bot uses MongoDB (Docker or Atlas) to store user links and supports ephemera
 - Node.js + TypeScript  
 - Discord.js v14  
 - MongoDB (Docker or Atlas)  
-- Axios for API requests  
-- PM2 for 24/7 process management  
+- Axios for API requests
 
 ---
 
